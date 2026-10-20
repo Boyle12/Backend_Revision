@@ -1,0 +1,12 @@
+{
+  "name": "backend_revision",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Abhinav kaushal",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev":"node index.js"
+  }
+}
