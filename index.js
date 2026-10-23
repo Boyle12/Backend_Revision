@@ -1,6 +1,40 @@
-import http from "http"
-const port = 8000;
-const server = http.createServer((req,res)=>{
+// create server using express
+
+import express from "express"
+const app = express()
+const port = 8000
+app.get("/",(req,res)=>{
+  res.send("hello, this side Abhinav")
+})
+app.listen(port,()=>{
+  console.log(`server is started on ${port}`);
+  
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* create server using node
+//import http from "http"
+//const port = 8000;
+//const server = http.createServer((req,res)=>{
   if(req.url == "/"){
     res.end("welcome to home route")
   }
@@ -22,4 +56,4 @@ server.listen(port,() =>{
   console.log("server is started");
   
 });
-  
+  */
